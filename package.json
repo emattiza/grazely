@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.14",
-    "@lydell/elm": "^0.19.1-5",
+    "@lydell/elm": "^0.19.1-12",
     "elm-format": "0.8.7",
     "elm-review": "2.10.2",
     "elm-test": "0.19.1-revision9",
