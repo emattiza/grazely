@@ -8,7 +8,13 @@ import Elm2D.Spritesheet exposing (Sprite, Spritesheet)
 import Html exposing (Html)
 
 
-main : Program ( Int, Int ) Model Msg
+type alias Flags =
+    { screenDimensions : ( Int, Int )
+    , tileURL : String
+    }
+
+
+main : Program Flags Model Msg
 main =
     Browser.element
         { init = init
@@ -29,15 +35,19 @@ type alias Model =
     }
 
 
-init : ( Int, Int ) -> ( Model, Cmd Msg )
-init ( width, height ) =
+init : Flags -> ( Model, Cmd Msg )
+init { tileURL, screenDimensions } =
+    let
+        ( width, height ) =
+            screenDimensions
+    in
     ( { spritesheet = Elm2D.Spritesheet.blank
       , screenSize = ( toFloat width, toFloat height )
       , counter = 0
       }
     , Elm2D.Spritesheet.load
         { tileSize = 16
-        , file = "assets/tileset.png" -- https://fikry13.itch.io/another-rpg-tileset
+        , file = tileURL -- https://fikry13.itch.io/another-rpg-tileset
         , onLoad = LoadedSpritesheet
         }
     )
