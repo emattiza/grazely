@@ -12,14 +12,14 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.14",
-    "elm": "0.19.1-5",
+    "@lydell/elm": "^0.19.1-5",
     "elm-format": "0.8.7",
     "elm-review": "2.10.2",
     "elm-test": "0.19.1-revision9",
     "elm-tooling": "1.12.0",
     "postcss": "8.4.24",
-    "vite": "3.2.7",
-    "vite-plugin-elm": "2.7.2"
+    "vite": "4.3.9",
+    "vite-plugin-elm": "^2.8.0"
   },
   "dependencies": {
     "daisyui": "2.52.0",
