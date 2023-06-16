@@ -103,7 +103,7 @@ view model =
         field height =
             List.range 0 15
                 |> List.map toFloat
-                |> List.map (\x -> Elm2D.sprite { sprite = sprites.grass, position = ( x * 32, height ), size = ( 32, 32 ) })
+                |> List.map (\x -> Elm2D.sprite { sprite = sprites.grass, position = ( x * 32, height ), size = ( 34, 32 ) })
 
         fields =
             List.range 0 9
