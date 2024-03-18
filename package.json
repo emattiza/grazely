@@ -16,7 +16,7 @@
     "elm-format": "0.8.7",
     "elm-review": "2.10.2",
     "elm-test": "0.19.1-revision9",
-    "elm-tooling": "1.12.0",
+    "elm-tooling": "1.15.1",
     "postcss": "8.4.24",
     "vite": "4.3.9",
     "vite-plugin-elm": "^2.8.0"
