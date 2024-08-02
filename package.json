@@ -11,7 +11,7 @@
     "test": "elm-test"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.14",
+    "autoprefixer": "10.4.20",
     "@lydell/elm": "^0.19.1-12",
     "elm-format": "0.8.7",
     "elm-review": "2.10.2",
